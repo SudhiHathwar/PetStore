@@ -1,0 +1,8 @@
+api:
+  swagger:
+    host: "http://localhost:8080"
+    pet:
+      create: "/api/v3/pet"
+      update: "/api/v3/pet"
+      get: "/api/v3/pet/%s"
+      delete: "/api/v3/pet/%s"

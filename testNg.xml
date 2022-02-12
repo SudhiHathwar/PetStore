@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Swagger Pet Store Tests" parallel="methods" thread-count="4">
+    <listeners>
+        <listener class-name="com.swagger.tests.configurations.AnnotationTransformer"/>
+    </listeners>
+    <test name="Pet Service Tests">
+        <classes>
+            <class name="com.swagger.tests.petService.PetTests"/>
+        </classes>
+    </test>
+</suite>
